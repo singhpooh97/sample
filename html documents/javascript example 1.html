@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>JavaScript Example 1</title>
+<script>
+function sum(){
+var a,b,c;
+a=document.myform.num1.value;<!--Name-->
+b=document.forms[0].elements[1].value;<!--Index-->
+c=parseInt(a)+parseInt(b);
+document.getElementById("result").value=c;<!--Id-->
+}
+function diff(){
+var a,b,c;
+a=document.myform.num1.value;<!--Name-->
+b=document.forms[0].elements[1].value;<!--Index-->
+c=parseInt(a)-parseInt(b);
+document.getElementById("result").value=c;<!--Id-->
+}
+</script>
+</head>
+<body>
+<h1>Calculation Form</h1>
+<form name="myform" action="abc.php"methods="post">
+Number1:<input type="text"name="num1"id="num1"/><br/><br/>
+Number2:<input type="text"name="num2"id="num2"/><br/><br/>
+<input type="button" value"Sum" onclick="sum();"/>
+<input type="button" value"Difference" onclick="diff();"/><br/>
+Result: <input type="text" name="result"id="result"/><br/><br/>
+</form>
+</body>
+</html>

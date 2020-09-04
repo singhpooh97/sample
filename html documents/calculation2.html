@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>JavaScript Example 1</title>
+<script>
+function sum(){
+var a,b,c,d;
+a=document.myform.num1.value;<!--Name-->
+b=document.forms[0].elements[1].value;<!--Index-->
+c=document.getElementById("result").value=c;<!--Id-->
+d=parseInt(a)+parseInt(b);
+}
+</script>
+</head>
+<body>
+<h1>Calculation Form</h1>
+<form name="myform" action="abc.php"methods="post">
+Number1:<input type="text"name="num1"id="num1"/><br/><br/>
+Number2:<input type="text"name="num2"id="num2"/><br/><br/>
+Result: <input type="button" onclick="result"id="result"/><br/><br/>
+<input type="text" name="sum();"/><br/>
+</form>
+</body>
+</html>
